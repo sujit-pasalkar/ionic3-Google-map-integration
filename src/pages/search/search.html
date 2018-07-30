@@ -1,0 +1,28 @@
+
+<ion-header >
+  <ion-navbar>
+    <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="searchInput($event)" (ionCancel)="onCancel($event)">
+    </ion-searchbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <ion-card *ngIf="serachFor" (click)="YourLoc()"  >
+    <ion-row>
+      <ion-col col-3 id="col3">
+        <ion-icon name="locate"></ion-icon>        
+      </ion-col>
+      <ion-col col-9>
+       <b>Your Location</b>    
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-card >
+    <ion-list>
+      <ion-item *ngFor="let item of loc" (click)="route(item.latitude,item.longitude,item.title)">
+        {{ item.title }}
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+</ion-content>

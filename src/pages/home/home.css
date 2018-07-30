@@ -1,0 +1,32 @@
+.ios page-home ion-card, .md page-home ion-card {
+  max-height: 150px;
+  overflow: scroll;
+  position: absolute;
+  z-index: 1;
+}
+
+.ios page-home #map, .md page-home #map {
+  height: 100%;
+}
+
+.ios page-home .inputbtn, .md page-home .inputbtn {
+  text-align: left;
+  color: white;
+  border-radius: 6px;
+  text-transform: capitalize;
+  width: 99%;
+  border-color: white;
+}
+
+.ios page-home .button-inner, .md page-home .button-inner {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.ios page-home .col2, .md page-home .col2 {
+  text-align: right;
+  top: 13px;
+  color: white;
+}
+/*# sourceMappingURL=home.css.map */

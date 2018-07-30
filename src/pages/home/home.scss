@@ -1,0 +1,96 @@
+.ios, .md {
+    page-home {
+        // #android-frame .statusbar {
+        // background-color: rgb(7, 3, 41);
+        // background-image: url(../img/android-statusbar.png);
+        // }
+
+        ion-header{
+             background-color: rgb(7, 3, 41);
+        }
+        #map {
+            height: 90%;
+            width: 100%;
+        }
+
+        .scroll {
+        height: 100%;
+      }
+
+        .inputbtn{
+            text-align: left;
+            color: white;
+            border-radius: 6px;
+            text-transform: capitalize;
+            width: 99%;
+            border-color: white;
+        }
+        .button-inner {
+            justify-content: left;
+             font-family: initial;
+        }
+        .col2{
+            text-align: left;
+            top: 13px;
+            left: 26px;
+            color: white;
+        }
+       
+         
+        // ion-icon{
+        //     color: white
+        //     }
+        .info{
+            background-color: rgb(7, 3, 41);     
+            margin-top: 1px;
+          b{  color: white;
+            font-family: initial;}
+              
+        }
+
+        ion-footer{
+            background-color: rgb(7, 3, 41);
+            padding-left: 2px;
+            height: 27%;
+
+            // ion-row{
+            //     [col-9]{
+            //          color: white;
+            //         font-family: initial;
+            //         // margin-bottom: 2rem;
+            //     }
+            //     // [col-3]{
+            //     //     text-align: center;
+            //     //      color: blue;
+            //     // }
+            // }
+             button{
+                top: 7%;
+                left: 84%;
+                background-color: rgb(7, 3, 41);
+                z-index: 1;
+            }
+
+            .card-md {
+            background-color: rgb(7, 3, 41);     
+                max-height: 150px;
+                overflow: scroll;
+                position: absolute;
+                z-index: 1;
+                margin: 0px;
+                width: 100%;
+                //     top: 1px;
+                ion-card-content{
+                    div{
+                        padding: 0px;
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+
+         
+         
+        
+    }
+}

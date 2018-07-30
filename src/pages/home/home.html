@@ -1,0 +1,36 @@
+<ion-header color="theme"> 
+  <ion-grid>
+    <ion-row>
+      <ion-col col-9>
+        <button *ngIf="loadProvider.start !==' '"  class="inputbtn" ion-button outline (click)="searchStart()">{{loadProvider.start}}</button>
+        <button *ngIf="loadProvider.start ==' '" class="inputbtn" ion-button outline (click)="searchStart()">your location</button>
+      </ion-col>
+      <button *ngIf="!showRout" ion-fab mini (click)="loadProvider.enableLocation()" style="left: 29px;">
+        <ion-icon name="locate"></ion-icon>
+      </button>
+    </ion-row>
+    <ion-row>
+      <ion-col col-9>
+        <button *ngIf="loadProvider.end !=' '" class="inputbtn" style="color:lightgrey" ion-button outline (click)="searchEnd()">{{loadProvider.end}}</button>
+        <button  *ngIf="loadProvider.end ==' '" class="inputbtn" style="color:lightgrey" ion-button outline (click)="searchEnd()">choose destination</button>
+      </ion-col>
+      <ion-col class="col2" col-2>
+        <ion-icon ios="ios-pin" md="md-pin"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content >
+  <div #map id="map">
+  </div>
+  <div  *ngIf="!showRout" class="info">
+    <b *ngIf="mapNotLoading" >Trying to load Map...</b>
+    <b *ngIf="!mapNotLoading" >Info :</b>
+  </div>
+  <ion-card>
+    <ion-card-content>
+      <div #directionsPanel></div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
